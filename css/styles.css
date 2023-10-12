@@ -7,7 +7,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
 }
 
 body{
@@ -43,6 +42,7 @@ header nav ul li a{
 
 main section .banner{
     display: flex;
+    background-size: cover;
 }
 
 /* Banner - Index */
@@ -147,6 +147,10 @@ footer{
     display: block;
     margin-bottom: 15px;
 }
+.footer-links ul li a:hover{
+    color: #ffffff;
+    padding-left: 6px;
+}
 
 .social-link a{
     display: inline-block;
@@ -160,22 +164,7 @@ footer{
     color: #ffffff;
 }
 
-/* .banner-img{
-    display: flex;
-    background-position: center;
-    background-size: cover;
-    align-items: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    width: 800px;
-    margin-top: 20px;
-    margin-left: 10px;
-} */
+.social-link a:hover{
+    background-color: #E2D4BA;
+}
 
-/* .banner-text{
-    text-align: right;
-    font-family: 'Montserrat', sans-serif;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-} */
