@@ -45,6 +45,11 @@ main section .banner{
     background-size: cover;
 }
 
+main section div .imagenes-carrousel{
+    align-items: center;
+
+}
+
 /* Main - Productos */
 .main-productos section{
     gap: 20px;
@@ -196,5 +201,6 @@ footer{
 
     header nav ul li .href-text{
         display: none;
+        
     }
 }
