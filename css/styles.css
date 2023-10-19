@@ -1,6 +1,6 @@
 /* Reset */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,61 +8,60 @@
     list-style: none;
 }
 
-/* Index - Home */
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
 }
 
 /* Header - General */
 
-header{
+header {
     background-color: #E2D4BA;
     font-family: 'Montserrat', sans-serif;
+    background-size: cover;
 }
 
-.logo{
+.logo {
     width: 150px;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
-    list-style: none;
     justify-content: space-evenly;
     align-items: center;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 18px
 }
 
-header .navbar{
-    display: none;
-}
-
 /* Main - Index*/
 
-main section .banner{
+main section .banner {
     display: flex;
     background-size: cover;
 }
 
-main section div .imagenes-carrousel{
+main section div .imagenes-carrousel {
     align-items: center;
 
 }
 
 /* Main - Productos */
-.main-productos section{
+.main-productos section {
     gap: 20px;
     margin-top: 30px;
 }
 
+main section .carousel-inner{
+    
+}
+
 /* Banner - Index */
 
-.capa{
+.capa {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -71,7 +70,7 @@ main section div .imagenes-carrousel{
     background: rgba(0, 0, 0, 0.75);
 }
 
-.banner{
+.banner {
     position: relative;
     width: 100%;
     height: calc(108vh - 50px);
@@ -81,7 +80,7 @@ main section div .imagenes-carrousel{
     background-size: cover;
 }
 
-.banner-img-text{
+.banner-img-text {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -96,19 +95,19 @@ main section div .imagenes-carrousel{
 
 }
 
-.banner-img-text h1{
+.banner-img-text h1 {
     margin: 20px;
     font-size: 30px;
 
 }
 
-.banner-img-text p{
+.banner-img-text p {
     margin: 20px;
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.banner-img-text .boton{
+.banner-img-text .boton {
     text-decoration: none;
     color: white;
     padding: 9px 20px;
@@ -118,40 +117,41 @@ main section div .imagenes-carrousel{
     width: 150px;
 }
 
-.contenido .button:hover{
+.contenido .button:hover {
     background-color: #fff;
     color: #333;
 }
 
 /* Carrousel - Index */
-section div .imagenes-carrousel{
-
+section div .carousel-item {
+    
 }
 
 
 /* Footer - General */
 
-.contenedor-footer{
+.contenedor-footer {
     width: 1200px;
     margin: 0 auto;
 }
 
-footer{
+footer {
     background-color: #24262B;
     padding: 80px 0;
 }
 
-.footer-row{
+.footer-row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.footer-links{
+.footer-links {
     width: 25%;
     padding: 0 15px;
+    /* justify-content: space-evenly; */
 }
 
-.footer-links h4{
+.footer-links h4 {
     font-size: 20px;
     color: #ffffff;
     margin-bottom: 25px;
@@ -161,19 +161,20 @@ footer{
     display: inline-block;
 }
 
-.footer-links ul li a{
+.footer-links ul li a {
     font-size: 18px;
     text-decoration: none;
     color: #BBBBBB;
     display: block;
     margin-bottom: 15px;
 }
-.footer-links ul li a:hover{
+
+.footer-links ul li a:hover {
     color: #ffffff;
     padding-left: 6px;
 }
 
-.social-link a{
+.social-link a {
     display: inline-block;
     min-height: 40px;
     width: 40px;
@@ -185,47 +186,80 @@ footer{
     color: #ffffff;
 }
 
-.social-link a:hover{
+.social-link a:hover {
     background-color: #E2D4BA;
 }
 
 /* Media queries */
-@media screen and (max-width:425px){
-    *{
+@media screen and (max-width:425px) {
+    * {
         box-sizing: border-box;
     }
-    
-    header{
+
+    /* Index  */
+
+    header {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         background-position: center;
     }
 
-    header .logo{
+    header .logo {
         display: block;
-        width: 75px;
+        width: 100px;
         align-items: center;
-        }
+        margin-right: 30px;
+    }
 
-    header nav ul li a{
+    header nav ul li a {
         display: flex;
         align-items: center;
     }
 
-    header nav ul li .href-text{
+    header nav ul li .href-text {
         display: none;
-        
     }
 
-    .main{
+    .main {
         width: 70%;
         padding: 20px;
         box-sizing: border-box;
     }
 
-    .footer{
+    .footer {
         width: 70%;
         padding: 20px;
+    }
+
+    /* Página productos */
+
+    .header-productos{        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+    }
+
+    .header-productos .logo{
+        display: block;
+        width: 100px;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .header-productos nav ul li a{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-productos nav ul li .href-text{
+        display: none;
+    }
+
+    .main-productos{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
     }
 }
