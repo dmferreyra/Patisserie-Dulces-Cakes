@@ -1,4 +1,3 @@
-/* Index - Home */
 /* Reset */
 
 *{
@@ -9,6 +8,7 @@
     list-style: none;
 }
 
+/* Index - Home */
 body{
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
@@ -36,6 +36,10 @@ header nav ul li a{
     text-decoration: none;
     color: black;
     font-size: 18px
+}
+
+header .navbar{
+    display: none;
 }
 
 /* Main - Index*/
@@ -119,6 +123,12 @@ main section div .imagenes-carrousel{
     color: #333;
 }
 
+/* Carrousel - Index */
+section div .imagenes-carrousel{
+
+}
+
+
 /* Footer - General */
 
 .contenedor-footer{
@@ -181,6 +191,10 @@ footer{
 
 /* Media queries */
 @media screen and (max-width:425px){
+    *{
+        box-sizing: border-box;
+    }
+    
     header{
         display: flex;
         justify-content: space-evenly;
@@ -202,5 +216,16 @@ footer{
     header nav ul li .href-text{
         display: none;
         
+    }
+
+    .main{
+        width: 70%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .footer{
+        width: 70%;
+        padding: 20px;
     }
 }
