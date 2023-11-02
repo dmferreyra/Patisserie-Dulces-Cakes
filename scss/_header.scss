@@ -1,0 +1,23 @@
+/*Estilos Header*/
+header{
+    background-color: #E2D4BA;
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            li{
+                .logo{
+                    width: 150px;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 18px
+                }
+            }
+        }
+    }
+}
