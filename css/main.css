@@ -118,6 +118,7 @@ main section .carouselExampleIndicators .carousel-inner .imagenes-carrousel {
 }
 .container-form form .btn-enviar {
   padding: 15px;
+  padding-bottom: 10px;
   font-size: 16px;
   border: none;
   outline: 0px;
