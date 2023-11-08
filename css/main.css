@@ -21,6 +21,7 @@ header nav ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0;
 }
 header nav ul li .logo {
   width: 150px;
@@ -41,7 +42,7 @@ main .banner {
   background-position: center;
   background-repeat: no-repeat;
 }
-main .capa {
+main .banner .capa {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -49,7 +50,7 @@ main .capa {
   left: 0;
   background: rgba(0, 0, 0, 0.75);
 }
-main .capa .banner-img-text {
+main .banner .capa .banner-img-text {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -61,16 +62,16 @@ main .capa .banner-img-text {
   justify-content: center;
   align-content: center;
 }
-main .capa .banner-img-text h1 {
+main .banner .capa .banner-img-text h1 {
   margin: 20px;
   font-size: 30px;
 }
-main .capa .banner-img-text p {
+main .banner .capa .banner-img-text p {
   margin: 20px;
   font-size: 18px;
   margin-bottom: 20px;
 }
-main .capa .banner-img-text .boton {
+main .banner .capa .banner-img-text .boton {
   text-decoration: none;
   color: white;
   padding: 9px 20px;
@@ -79,11 +80,14 @@ main .capa .banner-img-text .boton {
   transition: all 0.3s ease-in-out;
   width: 150px;
 }
-main .capa .banner-img-text .botonhover {
+main .banner .capa .banner-img-text .botonhover {
   background-color: #fff;
   color: #333;
 }
-main section .carouselExampleIndicators .carousel-inner .imagenes-carrousel {
+main section .carouselExampleIndicators .miCarousel {
+  width: 50%;
+}
+main section .carouselExampleIndicators .miCarousel .carousel-inner .imagenes-carrousel {
   align-items: center;
 }
 
@@ -150,6 +154,88 @@ main section .carouselExampleIndicators .carousel-inner .imagenes-carrousel {
 .container-form .info-form a i {
   color: orange;
   margin-right: 10px;
+}
+
+.main-recetas .heading {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+.main-recetas .heading .h1 {
+  font-size: 50px;
+  color: #000;
+  margin-bottom: 25px;
+  position: relative;
+}
+.main-recetas .heading .h1after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #4caf50;
+}
+.main-recetas .heading .p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 35px;
+}
+.main-recetas .container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.main-recetas .container .acerca {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-recetas .container .acerca .acerca-img {
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+.main-recetas .container .acerca .acerca-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+.main-recetas .container .acerca .acerca-img imghover {
+  transform: scale(1.2);
+}
+.main-recetas .container .acerca .acerca-img .acerca-contenido {
+  flex: 1;
+}
+.main-recetas .container .acerca .acerca-img .acerca-contenido h2 {
+  font-size: 23px;
+  margin-bottom: 25px;
+  color: #333;
+}
+.main-recetas .container .acerca .acerca-img .acerca-contenido p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #666;
+}
+.main-recetas .container .acerca .acerca-img .acerca-contenido .ver-mas {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #4caf50;
+  font-size: 19px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  transform: 0.3 ease;
+}
+.main-recetas .container .acerca .acerca-img .acerca-contenido .ver-mashover {
+  background-color: #3e8e41;
 }
 
 footer {
@@ -258,6 +344,34 @@ footer .contenedor-footer .footer-row .footer-links ul li ahover {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+  }
+  .main-recetas .heading {
+    padding: 0px 20px;
+  }
+  .main-recetas .heading h1 {
+    font-size: 36px;
+  }
+  .main-recetas .heading p {
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+  .main-recetas .container {
+    padding: 0px;
+  }
+  .main-recetas .container .acerca {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .main-recetas .container .acerca .acerca-img {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .main-recetas .container .acerca .acerca-contenido p {
+    padding: 0px;
+    font-size: 16px;
+  }
+  .main-recetas .container .acerca .acerca-contenido .ver-mas {
+    font-size: 16px;
   }
 }
 

@@ -8,56 +8,59 @@ main{
         background-image: url(../assets/hombre-amasando.jpg);
         background-position: center;
         background-repeat: no-repeat;
-    }
-    .capa{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.75);
-        .banner-img-text{
-            margin: 0;
-            padding: 0;
+        .capa{
             width: 100%;
             height: 100%;
-            color: white;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;  
-            h1{
-                margin: 20px;
-                font-size: 30px;
-            }
-            p{
-                margin: 20px;
-                font-size: 18px;
-                margin-bottom: 20px; 
-            }
-            .boton{
-                text-decoration: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.75);
+            .banner-img-text{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
                 color: white;
-                padding: 9px 20px;
-                text-transform: uppercase;
-                border: 1px solid #fff;
-                transition: all .3s ease-in-out;
-                width: 150px;
-            }
-            .boton{
-                &hover{
-                    background-color: #fff;
-                    color: #333;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;  
+                h1{
+                    margin: 20px;
+                    font-size: 30px;
+                }
+                p{
+                    margin: 20px;
+                    font-size: 18px;
+                    margin-bottom: 20px; 
+                }
+                .boton{
+                    text-decoration: none;
+                    color: white;
+                    padding: 9px 20px;
+                    text-transform: uppercase;
+                    border: 1px solid #fff;
+                    transition: all .3s ease-in-out;
+                    width: 150px;
+                }
+                .boton{
+                    &hover{
+                        background-color: #fff;
+                        color: #333;
+                    }
                 }
             }
         }
     }
     section{
         .carouselExampleIndicators{
-            .carousel-inner{
-                .imagenes-carrousel{
-                    align-items: center;
+            .miCarousel{
+                width: 50%;
+                .carousel-inner{
+                    .imagenes-carrousel{
+                        align-items: center;
+                    }
                 }
             }
         }

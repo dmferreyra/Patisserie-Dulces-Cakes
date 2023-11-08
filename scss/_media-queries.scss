@@ -66,4 +66,36 @@
         padding: 20px;
         box-sizing: border-box;
     }
+    .main-recetas{
+        .heading{
+            padding: 0px 20px;
+            h1{
+                font-size: 36px;
+            }
+            p{
+                font-size: 17px;
+                margin-bottom: 0px;
+            }
+        }
+        .container{
+            padding: 0px;
+            .acerca{
+                padding: 20px;
+                flex-direction: column;
+                .acerca-img{
+                    margin-right: 0px;
+                    margin-bottom: 20px;
+                }
+                .acerca-contenido{
+                    p{
+                        padding: 0px;
+                        font-size: 16px;
+                    }
+                    .ver-mas{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
 }
