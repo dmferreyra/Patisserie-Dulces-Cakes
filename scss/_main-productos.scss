@@ -2,19 +2,50 @@
     .container{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         .card{
             background-color: white;
             width: 270px;
-            height: 400px;
             margin: 10px;
+            border-radius: 15px;
+            h2{
+                font-size: 25px;
+                padding: 10px;
+            }
+            p{
+                padding: 10px;
+            }
+            a{
+                background-color: black;
+                color: white;
+                padding: 15px 20px;
+                display: block;
+                text-align: center;
+                margin: 20px 50px;
+                text-decoration: none;
+            }
             .card-image{
                 background-color: aqua;
                 height: 170px;
                 margin-bottom: 15px;
                 background-size: cover;
-                .car-1{
-                    background-image: url(../assets/tarta-strawberry.jpg);
-                }
+                border-radius: 15px 15px 0px 0px;
+            }
+            .car-1{
+                background-image: url(../assets/budin-de-chocolate.jpg);
+            }
+            .car-2{
+                background-image: url(../assets/torta-de-chocolate.jpg);
+            }
+            .car-3{
+                background-image: url(../assets/tarta-de-frambuesa.jpg);
+            }
+            &:hover{
+                background-color: rgb(62, 62, 62);
+                color: white;
+                cursor: pointer;
+                transform: scale(1.03);
+                transition: all 1s ease;
             }
         }
     }

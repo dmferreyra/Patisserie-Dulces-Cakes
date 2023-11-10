@@ -21,7 +21,7 @@ footer{
                         line-height: 40px;
                         border-radius: 50%;
                         color: #ffffff;
-                        &hover{
+                        &:hover{
                             background-color: #E2D4BA;
                         }
                     }
@@ -43,7 +43,7 @@ footer{
                             color: #BBBBBB;
                             display: block;
                             margin-bottom: 15px;
-                            &hover{
+                            &:hover{
                                 color: #ffffff;
                                 padding-left: 6px;
                             }

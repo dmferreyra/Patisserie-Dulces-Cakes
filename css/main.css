@@ -80,7 +80,7 @@ main .banner .capa .banner-img-text .boton {
   transition: all 0.3s ease-in-out;
   width: 150px;
 }
-main .banner .capa .banner-img-text .botonhover {
+main .banner .capa .banner-img-text .boton:hover {
   background-color: #fff;
   color: #333;
 }
@@ -94,21 +94,52 @@ main section .carouselExampleIndicators .miCarousel .carousel-inner .imagenes-ca
 .main-productos .container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .main-productos .container .card {
   background-color: white;
   width: 270px;
-  height: 400px;
   margin: 10px;
+  border-radius: 15px;
+}
+.main-productos .container .card h2 {
+  font-size: 25px;
+  padding: 10px;
+}
+.main-productos .container .card p {
+  padding: 10px;
+}
+.main-productos .container .card a {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
 }
 .main-productos .container .card .card-image {
   background-color: aqua;
   height: 170px;
   margin-bottom: 15px;
   background-size: cover;
+  border-radius: 15px 15px 0px 0px;
 }
-.main-productos .container .card .card-image .car-1 {
-  background-image: url(../assets/tarta-strawberry.jpg);
+.main-productos .container .card .car-1 {
+  background-image: url(../assets/budin-de-chocolate.jpg);
+}
+.main-productos .container .card .car-2 {
+  background-image: url(../assets/torta-de-chocolate.jpg);
+}
+.main-productos .container .card .car-3 {
+  background-image: url(../assets/tarta-de-frambuesa.jpg);
+}
+.main-productos .container .card:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
 }
 
 .container-form {
@@ -141,11 +172,12 @@ main section .carouselExampleIndicators .miCarousel .carousel-inner .imagenes-ca
   font-size: 16px;
   border: none;
   outline: 0px;
+  margin: 10px;
   background: greenyellow;
   cursor: pointer;
   transition: all 300ms ease;
 }
-.container-form form .btn-enviarhover {
+.container-form form .btn-enviar:hover {
   background: green;
 }
 .container-form .info-form h1 {
@@ -171,6 +203,98 @@ main section .carouselExampleIndicators .miCarousel .carousel-inner .imagenes-ca
   margin-right: 10px;
 }
 
+.main-recetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.main-recetas .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+.main-recetas .card:hover .card-info {
+  left: 100%;
+}
+.main-recetas .card .card-info {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  padding: 15px;
+  background: #fff;
+  z-index: 90;
+  box-shadow: 0 5px 10px #000;
+  transition: 0.5s;
+}
+.main-recetas .card .card-info .action .btn {
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  background: #bc8811;
+  display: block;
+  margin-top: 10px;
+}
+.main-recetas .card .card-info .content {
+  margin-top: 15px;
+}
+.main-recetas .card .card-info .content .list {
+  padding: 10px 15px;
+}
+.main-recetas .card .card-info .content .list li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.main-recetas .card .card-info .head {
+  padding: 5px 0;
+  border-bottom: solid 1px #bc8811;
+}
+.main-recetas .card .card-info .head .description {
+  display: flex;
+  gap: 10px;
+}
+.main-recetas .card .card-info .head .description .item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.main-recetas .card .card-info .head .description .item i {
+  color: #bc8811;
+  font-size: 15px;
+}
+.main-recetas .card .card-info .head .description .item p {
+  font-size: 13px;
+}
+.main-recetas .card .card-info .head .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #bc8811;
+}
+.main-recetas .card .card-landing {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 10px #000;
+  background: linear-gradient(transparent 80%, #000), var(--i);
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+}
+.main-recetas .card .card-landing h6 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 25px;
+  color: #fff;
+}
+
 .main-nosotros .heading {
   width: 90%;
   display: flex;
@@ -186,7 +310,7 @@ main section .carouselExampleIndicators .miCarousel .carousel-inner .imagenes-ca
   margin-bottom: 25px;
   position: relative;
 }
-.main-nosotros .heading .h1after {
+.main-nosotros .heading .h1:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -249,7 +373,7 @@ main section .carouselExampleIndicators .miCarousel .carousel-inner .imagenes-ca
   margin-top: 15px;
   transform: 0.3 ease;
 }
-.main-nosotros .container .acerca .acerca-img .acerca-contenido .ver-mashover {
+.main-nosotros .container .acerca .acerca-img .acerca-contenido .ver-mas:hover {
   background-color: #3e8e41;
 }
 
@@ -280,7 +404,7 @@ footer .contenedor-footer .footer-row .footer-links .social-link a {
   border-radius: 50%;
   color: #ffffff;
 }
-footer .contenedor-footer .footer-row .footer-links .social-link ahover {
+footer .contenedor-footer .footer-row .footer-links .social-link a:hover {
   background-color: #E2D4BA;
 }
 footer .contenedor-footer .footer-row .footer-links h4 {
@@ -299,7 +423,7 @@ footer .contenedor-footer .footer-row .footer-links ul li a {
   display: block;
   margin-bottom: 15px;
 }
-footer .contenedor-footer .footer-row .footer-links ul li ahover {
+footer .contenedor-footer .footer-row .footer-links ul li a:hover {
   color: #ffffff;
   padding-left: 6px;
 }
@@ -387,6 +511,25 @@ footer .contenedor-footer .footer-row .footer-links ul li ahover {
   }
   .main-recetas .container .acerca .acerca-contenido .ver-mas {
     font-size: 16px;
+  }
+  .header-recetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+  }
+  .header-recetas nav ul li .logo {
+    display: block;
+    width: 100px;
+    align-items: center;
+    margin-right: 30px;
+  }
+  .header-recetas nav ul li a {
+    display: flex;
+    align-items: center;
+  }
+  .header-recetas nav ul li .href-text {
+    display: none;
   }
 }
 

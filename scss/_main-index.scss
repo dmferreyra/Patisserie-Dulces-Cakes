@@ -45,7 +45,7 @@ main{
                     width: 150px;
                 }
                 .boton{
-                    &hover{
+                    &:hover{
                         background-color: #fff;
                         color: #333;
                     }

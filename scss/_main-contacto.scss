@@ -28,10 +28,11 @@
             font-size: 16px;
             border: none;
             outline: 0px;
+            margin: 10px;
             background: greenyellow;
             cursor: pointer;
             transition: all 300ms ease;
-            &hover{
+            &:hover{
                 background: green;
             }
         }
