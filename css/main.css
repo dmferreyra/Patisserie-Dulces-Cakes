@@ -91,9 +91,24 @@ main section .carouselExampleIndicators .miCarousel .carousel-inner .imagenes-ca
   align-items: center;
 }
 
-.main-productos section {
-  gap: 20px;
-  margin-top: 30px;
+.main-productos .container {
+  display: flex;
+  justify-content: center;
+}
+.main-productos .container .card {
+  background-color: white;
+  width: 270px;
+  height: 400px;
+  margin: 10px;
+}
+.main-productos .container .card .card-image {
+  background-color: aqua;
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+}
+.main-productos .container .card .card-image .car-1 {
+  background-image: url(../assets/tarta-strawberry.jpg);
 }
 
 .container-form {
@@ -156,7 +171,7 @@ main section .carouselExampleIndicators .miCarousel .carousel-inner .imagenes-ca
   margin-right: 10px;
 }
 
-.main-recetas .heading {
+.main-nosotros .heading {
   width: 90%;
   display: flex;
   justify-content: center;
@@ -165,13 +180,13 @@ main section .carouselExampleIndicators .miCarousel .carousel-inner .imagenes-ca
   text-align: center;
   margin: 20px auto;
 }
-.main-recetas .heading .h1 {
+.main-nosotros .heading .h1 {
   font-size: 50px;
   color: #000;
   margin-bottom: 25px;
   position: relative;
 }
-.main-recetas .heading .h1after {
+.main-nosotros .heading .h1after {
   content: "";
   position: absolute;
   width: 100%;
@@ -180,50 +195,50 @@ main section .carouselExampleIndicators .miCarousel .carousel-inner .imagenes-ca
   margin: 0 auto;
   background-color: #4caf50;
 }
-.main-recetas .heading .p {
+.main-nosotros .heading .p {
   font-size: 18px;
   color: #666;
   margin-bottom: 35px;
 }
-.main-recetas .container {
+.main-nosotros .container {
   width: 90%;
   margin: 0 auto;
   padding: 10px 20px;
 }
-.main-recetas .container .acerca {
+.main-nosotros .container .acerca {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-.main-recetas .container .acerca .acerca-img {
+.main-nosotros .container .acerca .acerca-img {
   flex: 1;
   margin-right: 40px;
   overflow: hidden;
 }
-.main-recetas .container .acerca .acerca-img img {
+.main-nosotros .container .acerca .acerca-img img {
   max-width: 100%;
   height: auto;
   display: block;
   transition: 0.5s ease;
 }
-.main-recetas .container .acerca .acerca-img imghover {
+.main-nosotros .container .acerca .acerca-img imghover {
   transform: scale(1.2);
 }
-.main-recetas .container .acerca .acerca-img .acerca-contenido {
+.main-nosotros .container .acerca .acerca-img .acerca-contenido {
   flex: 1;
 }
-.main-recetas .container .acerca .acerca-img .acerca-contenido h2 {
+.main-nosotros .container .acerca .acerca-img .acerca-contenido h2 {
   font-size: 23px;
   margin-bottom: 25px;
   color: #333;
 }
-.main-recetas .container .acerca .acerca-img .acerca-contenido p {
+.main-nosotros .container .acerca .acerca-img .acerca-contenido p {
   font-size: 12px;
   line-height: 1.5;
   color: #666;
 }
-.main-recetas .container .acerca .acerca-img .acerca-contenido .ver-mas {
+.main-nosotros .container .acerca .acerca-img .acerca-contenido .ver-mas {
   display: inline-block;
   padding: 10px 20px;
   color: #fff;
@@ -234,7 +249,7 @@ main section .carouselExampleIndicators .miCarousel .carousel-inner .imagenes-ca
   margin-top: 15px;
   transform: 0.3 ease;
 }
-.main-recetas .container .acerca .acerca-img .acerca-contenido .ver-mashover {
+.main-nosotros .container .acerca .acerca-img .acerca-contenido .ver-mashover {
   background-color: #3e8e41;
 }
 

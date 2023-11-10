@@ -1,6 +1,21 @@
 .main-productos{
-    section{
-        gap: 20px;
-        margin-top: 30px;
+    .container{
+        display: flex;
+        justify-content: center;
+        .card{
+            background-color: white;
+            width: 270px;
+            height: 400px;
+            margin: 10px;
+            .card-image{
+                background-color: aqua;
+                height: 170px;
+                margin-bottom: 15px;
+                background-size: cover;
+                .car-1{
+                    background-image: url(../assets/tarta-strawberry.jpg);
+                }
+            }
+        }
     }
 }
